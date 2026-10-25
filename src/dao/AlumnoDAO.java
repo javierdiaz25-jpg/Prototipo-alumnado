@@ -25,4 +25,17 @@ public class AlumnoDAO {
     public List<Alumno> listarAlumnos() {
         return alumnos;
     }
+
+public Alumno buscarPorId(int id) {
+
+    for (Alumno alumno : alumnos) {
+
+        if (alumno.getId() == id) {
+            return alumno;
+        }
+    }
+
+    return null;
+}
+
 }
